@@ -7,7 +7,17 @@
 // ( n * (n+1)) / 2
 
 // sort array of numbers
-// arr.sort((a,b) =: a-b)
+arr.sort((a,b) =: a-b)
+
+// sort arr of strings by length
+inputArray.sort((a,b) => a.length - b.length);
+
+// number to str
+n.toString();
+
+// hr an min
+const hours = Math.floor(minutes / 60);
+const mins = minutes % 60;  
 
 // sort intervals 
 // intervals.sort((a,b) => a[0]- b[0])
@@ -80,6 +90,26 @@ El mínimo entre 2 valores Math.min(height[left], height[right])
 El máximo entre 2 valores Math.max(-10, -1)
 Math.pow(2, 31) => Math.pow(base, exponent)
 
+console.log(Math.ceil(7.004));
+// Expected output: 8
+
+
+str.replace(charToRemove, '');
+
+
+//Remove 1st ocurrence of a str
+s1.replace(char, '');
+let str = "hello world";
+let charToRemove = "o";
+let newStr = str.replace(charToRemove, '');
+console.log(newStr); // "hell world"
+
+//Get last digit of Number
+half2 = half2 + (n%10)
+
+//Remove last elem of Number
+n = Math.floor(n / 10)
+
 Number.isInteger(0); // true
 Number.isInteger(1); // true
 Number.isInteger(-100000); // true
@@ -88,10 +118,55 @@ Borrar espacios en string = '    asdkajwdk  asdf asd  '.replace(/\s/g, '');    =
 
 array.reverse()
 
+console.log(Number('12345'))     // Outputs: 12345
+console.log(Number('abcef'))     // Outputs: NaN
+console.log(Number('12345abc'))  // Outputs: NaN
+
+funciona con if()
+if(NaN) { //No se ejecuta }
+if(21)
+
+let myArray = ['Hello', 'world', 'this', 'is', 'JavaScript'];
+let joinedString = myArray.join(' '); // Using a space as a separator
+
+console.log(joinedString); // Output: "Hello world this is JavaScript"
+
+let copy = [array];
+//resultado:
+[[array]];
+
+const stack = [[i,j]];
+stack:  [ [ 0, 0 ] ]
+
+
+// remove duplicates in arr js
+const array = [1, 2, 3, 4, 4, 5, 1, 2];
+const uniqueArray = [...new Set(array)];
+
+console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+
+
+=== while(len--) ===
+while(len--) {
+    console.log(array[len]);
+}
+// Output: 5, 4, 3, 2, 1
+
+
+=== arr.shift() ===
+let arr = [1, 2, 3, 4];
+
+let firstElement = arr.shift();
+
+console.log(firstElement); // Output: 1
+console.log(arr);          // Output: [2, 3, 4]
+
+
+
 
 */
 
-// ======= Hash en JS ======
+// ================ Hash en JS ================
 
 /*
 Acceder a un valor usando una clave
@@ -134,6 +209,10 @@ Para convertir str de numeros a array:
 let digitsArr = digits.split('').map(Number);
 resultado = [1, 2, 3, 4, 8, 7, 6];
 
+let autoRadix = parseInt('101'); 
+console.log(autoRadix); // Output: 101 (interpreted as base 10)
+
+
 
 Para hacer las combinaciones de elementos de arrays en JS:
 
@@ -165,6 +244,14 @@ Permutations, State Space Tree, All possible solutions, subsets, combinations ==
 
 Floyd Warshall All Pairs Shortest Path Algorithm
 
+
+Binary Tree - Level Order Traversal = BFS => usar queue
+Binary Tree - Pre Order Traversal = DFS => usar stack
+
+So in summary, always go from the root in counterclockwise direction around the tree. 
+ - For Pre-Order, print the nodes as you visit them for the first time. 
+ - For In-Order, print the nodes only when you visit them for the second time. 
+ - For Post-order, print the nodes when you visit them for the last time.
 
 */
 
